@@ -1,0 +1,6 @@
+# 1. Build the image
+docker build -t simple-web-app:v1 .
+
+# 2. Run the container
+# This maps your local port 8080 to the container's 8080
+docker run -p 8080:8080 simple-web-app:v1
